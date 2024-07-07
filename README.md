@@ -1,6 +1,6 @@
 ## demo app - developing with Docker
 
-## Summary
+### Summary
 
 I deployed this demo app to get hands-on experience with CI/CD using Docker. This project includes setting up a MongoDB database and Mongo-Express for database management, along with a Node.js backend. Docker and Docker Compose facilitate easy deployment and management of the application.
 
@@ -67,15 +67,16 @@ Step 5: access the nodejs application from browser
 
     http://localhost:3000
 
-#### To build a docker image from the application
+### To build a docker image from the application
 
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
 
-#### Pushing my Docker image into a private repository in AWS ECR.
+### Pushing my Docker image into a private repository in AWS ECR.
 
 Step 1: Create a Repository in AWS ECR.
+
 Step 2: Push the docker image.
 
 
@@ -83,5 +84,6 @@ Step 2: Push the docker image.
 #### Pulling my docker image into the deployment server.
 
 Step 1: Docker login if it is a private repository.
+
 Step 2: Use docker-compose.yaml to deploy the application.
 
